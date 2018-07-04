@@ -371,8 +371,8 @@ set_target_properties(${qhull_SHAREDR} PROPERTIES
 if(UNIX)
     target_link_libraries(${qhull_SHAREDR} m)
     if(APPLE)
-        set_target_properties(${qhull_SHAREDR} PROPERTIES 
-            INSTALL_NAME_DIR "${LIB_INSTALL_DIR}")
+        #set_target_properties(${qhull_SHAREDR} PROPERTIES 
+        #    INSTALL_NAME_DIR "${LIB_INSTALL_DIR}")
     else()
         set_target_properties(${qhull_SHAREDR} PROPERTIES 
             INSTALL_RPATH "${LIB_INSTALL_DIR}"
@@ -402,8 +402,8 @@ set_target_properties(${qhull_SHARED} PROPERTIES
 if(UNIX)
     target_link_libraries(${qhull_SHARED} m)
     if(APPLE)
-        set_target_properties(${qhull_SHARED} PROPERTIES 
-            INSTALL_NAME_DIR "${LIB_INSTALL_DIR}")
+        #set_target_properties(${qhull_SHARED} PROPERTIES 
+        #    INSTALL_NAME_DIR "${LIB_INSTALL_DIR}")
     else()
         set_target_properties(${qhull_SHARED} PROPERTIES 
             INSTALL_RPATH "${LIB_INSTALL_DIR}"
@@ -427,8 +427,8 @@ set_target_properties(${qhull_SHAREDP} PROPERTIES
 if(UNIX)
     target_link_libraries(${qhull_SHAREDP} m)
     if(APPLE)
-        set_target_properties(${qhull_SHAREDP} PROPERTIES 
-            INSTALL_NAME_DIR "${LIB_INSTALL_DIR}")
+        #set_target_properties(${qhull_SHAREDP} PROPERTIES 
+        #    INSTALL_NAME_DIR "${LIB_INSTALL_DIR}")
     else()
         set_target_properties(${qhull_SHAREDP} PROPERTIES 
             INSTALL_RPATH "${LIB_INSTALL_DIR}"
